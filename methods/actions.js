@@ -14,7 +14,7 @@ var functions = {
             });
             newUser.save(function (err, newUser) {
                 if (err) {
-                    res.json({success: false, msg: 'failed to save'})
+                    res.json({success: false, msg: 'failed to save', error: err})
                 }
                 else {
                     res.json({success: true, msg: 'user saved'})

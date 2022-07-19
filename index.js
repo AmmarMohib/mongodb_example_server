@@ -19,4 +19,4 @@ if (process.env.NODE_ENV == 'development') {
 }
 const PORT = process.env.PORT || 11122;
 
-app.listen(PORT, console.log(`Server running on ${process.env.NODE_ENV} mode on port ${PORT}`));
+app.listen(PORT, console.log(`Server running on port ${PORT}`));
